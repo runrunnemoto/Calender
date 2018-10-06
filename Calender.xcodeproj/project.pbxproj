@@ -14,6 +14,9 @@
 		0418B19821672B430078E6B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0418B19621672B430078E6B6 /* LaunchScreen.storyboard */; };
 		0418B1A321672B430078E6B6 /* CalenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B1A221672B430078E6B6 /* CalenderTests.swift */; };
 		0418B1AE21672B430078E6B6 /* CalenderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418B1AD21672B430078E6B6 /* CalenderUITests.swift */; };
+		044AEC93216903A4007758CE /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AEC92216903A4007758CE /* EventViewController.swift */; };
+		044AEC95216905F2007758CE /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AEC94216905F2007758CE /* Event.swift */; };
+		AD9D9397F6480E3DC24993A7 /* Pods_Calender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C27F1F9F197B15EFC8AAC4B /* Pods_Calender.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,11 @@
 		0418B1A921672B430078E6B6 /* CalenderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CalenderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0418B1AD21672B430078E6B6 /* CalenderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalenderUITests.swift; sourceTree = "<group>"; };
 		0418B1AF21672B430078E6B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		044AEC92216903A4007758CE /* EventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		044AEC94216905F2007758CE /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		205CA9AC6703A9909D175464 /* Pods-Calender.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calender.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Calender/Pods-Calender.debug.xcconfig"; sourceTree = "<group>"; };
+		40B01F5B5C4C0532E3A16905 /* Pods-Calender.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Calender.release.xcconfig"; path = "Pods/Target Support Files/Pods-Calender/Pods-Calender.release.xcconfig"; sourceTree = "<group>"; };
+		6C27F1F9F197B15EFC8AAC4B /* Pods_Calender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Calender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD9D9397F6480E3DC24993A7 /* Pods_Calender.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +90,8 @@
 				0418B1A121672B430078E6B6 /* CalenderTests */,
 				0418B1AC21672B430078E6B6 /* CalenderUITests */,
 				0418B18B21672B420078E6B6 /* Products */,
+				FDE653E122BDBE5A9EDB66BA /* Pods */,
+				6CB11CB6C9406E6E63D14449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +109,9 @@
 			isa = PBXGroup;
 			children = (
 				0418B18D21672B420078E6B6 /* AppDelegate.swift */,
+				044AEC94216905F2007758CE /* Event.swift */,
 				0418B18F21672B420078E6B6 /* ViewController.swift */,
+				044AEC92216903A4007758CE /* EventViewController.swift */,
 				0418B19121672B420078E6B6 /* Main.storyboard */,
 				0418B19421672B420078E6B6 /* Assets.xcassets */,
 				0418B19621672B430078E6B6 /* LaunchScreen.storyboard */,
@@ -125,6 +138,23 @@
 			path = CalenderUITests;
 			sourceTree = "<group>";
 		};
+		6CB11CB6C9406E6E63D14449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6C27F1F9F197B15EFC8AAC4B /* Pods_Calender.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FDE653E122BDBE5A9EDB66BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				205CA9AC6703A9909D175464 /* Pods-Calender.debug.xcconfig */,
+				40B01F5B5C4C0532E3A16905 /* Pods-Calender.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0418B1B221672B430078E6B6 /* Build configuration list for PBXNativeTarget "Calender" */;
 			buildPhases = (
+				400919BB03A7A390007A9E66 /* [CP] Check Pods Manifest.lock */,
 				0418B18621672B420078E6B6 /* Sources */,
 				0418B18721672B420078E6B6 /* Frameworks */,
 				0418B18821672B420078E6B6 /* Resources */,
+				71A7576566131ED2E7198F0B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -254,11 +286,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		400919BB03A7A390007A9E66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Calender-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71A7576566131ED2E7198F0B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Calender/Pods-Calender-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CalculateCalendarLogic/CalculateCalendarLogic.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CalculateCalendarLogic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Calender/Pods-Calender-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0418B18621672B420078E6B6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				044AEC95216905F2007758CE /* Event.swift in Sources */,
+				044AEC93216903A4007758CE /* EventViewController.swift in Sources */,
 				0418B19021672B420078E6B6 /* ViewController.swift in Sources */,
 				0418B18E21672B420078E6B6 /* AppDelegate.swift in Sources */,
 			);
@@ -424,6 +503,7 @@
 		};
 		0418B1B321672B430078E6B6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 205CA9AC6703A9909D175464 /* Pods-Calender.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +518,7 @@
 		};
 		0418B1B421672B430078E6B6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40B01F5B5C4C0532E3A16905 /* Pods-Calender.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
